@@ -4,7 +4,8 @@ import requests
 def fetch_payment():
 
     response = requests.get(
-        "https://example.com"
+        "http://payment-api.com",
+        verify=False
     )
 
     return response.json()
