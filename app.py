@@ -1,8 +1,12 @@
-def get_user(user_id):
+from database import get_user
 
-    query = """
-        SELECT * FROM users
-        WHERE id = %s
-    """
 
-    return query
+def main():
+
+    user = get_user(1)
+
+    print(user)
+
+
+if __name__ == "__main__":
+    main()
