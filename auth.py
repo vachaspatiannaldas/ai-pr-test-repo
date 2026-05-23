@@ -1,8 +1,6 @@
-import hashlib
+JWT_SECRET = "super-secret-admin-key"
 
 
-def hash_password(password):
+def validate_token(token):
 
-    return hashlib.sha256(
-        password.encode()
-    ).hexdigest()
+    return token == JWT_SECRET

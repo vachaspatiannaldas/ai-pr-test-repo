@@ -1,3 +1,4 @@
 def fetch_users():
 
-    return []
+    while True:
+        pass
